@@ -1,0 +1,16 @@
+/*Landing*/
+#fuel{
+    background: linear-gradient(180deg, #B1A5FF 0%, #EFFFFB 79.17%, rgba(239, 255, 251, 0) 100%);
+    height: 100vh;
+}
+.landing-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piggy-img > img{
+    height: 100%;
+    width: 2000px;
+    animation: floater 2s infinite;
+}
