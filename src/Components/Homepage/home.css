@@ -1,30 +1,51 @@
 /*Landing*/
 #fuel{
+    display: flex;
+    height: 100vh;
     background: linear-gradient(180deg, #B1A5FF 0%, #EFFFFB 79.17%, rgba(239, 255, 251, 0) 100%);
-    height: 100vh;
 }
-.landing-container{
+.landing-container, .tools-container{
     overflow-x: hidden;
-    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.piggy-img > img{
+.piggy-img > img, .hands-img > img{
     height: 100%;
     width: 2000px;
     animation: floater 2s infinite;
 }
+.hands-img > img{
+    width: 1500px;
+}
 @media only screen and (max-width: 1896px){
-    .piggy-img > img{
+    .piggy-img > img, .hands-img > img{
         height: 100%;
         width: 1000px;
     }
 
 }
+
+@media only screen and (max-width: 2104px){
+    .mini-card{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 1613px){
+    .hands-img{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        opacity: 20% !important;
+    }
+    .tools-txt, .hands-img > img{
+        width: 90%;
+    }
+}
 @media only screen and (max-width: 990px){
-    .piggy-img{
+    .piggy-img, .hands-img{
         position: absolute;
         z-index: 1;
         opacity: 20% !important;
@@ -59,4 +80,62 @@
         display: none;
     }
 
+}
+/*Tools*/
+#tools{
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(90.4deg, rgba(255, 202, 202, 0.69) 0.33%, rgba(151, 161, 255, 0) 99.65%);
+}
+.mini-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    padding: 50px;
+
+}
+.mini-card > .logo{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 8px;
+}
+.mini-card > .logo > img{
+    width: 100px;
+    height: 100px;
+}
+.tools-txt > h1{
+    margin-bottom: 60px;
+}
+
+.mini-card > .txt{
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 781px){
+    .mini-card{
+        display: block;
+    }
+    .mini-card > .logo{
+        margin: auto;
+        margin-bottom: 40px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+    }
+    .mini-card > .txt{
+        margin: auto;
+    }
+    .mini-card > .txt > h2, .mini-card > .txt > p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .mini-card > .txt > p{
+        border-top: solid ;
+        padding-top: 10px;
+    }
 }

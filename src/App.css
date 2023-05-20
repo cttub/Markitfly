@@ -53,7 +53,6 @@ a.pink-txt::after{
 a.orange-txt:hover {
   color: #FF0E73;
 }
-
 a.pink-txt:hover {
   color: #FF793F;
 }
@@ -64,7 +63,7 @@ a:hover::after {
 
 
 .small-txt {
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .purple-txt {
@@ -150,6 +149,23 @@ button:hover {
   p,a{
     font-size: 30px;
   }
+}
+.fp-watermark{
+  display: none;
+}
+#fuel > *::-webkit-scrollbar, #tools > *::-webkit-scrollbar{
+  display: none !important;
+}
+*::-webkit-scrollbar {
+  width: 12px !important;
+  background-color: #FF0E73 !important;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .8);
+}
 
-  
+
+*::-webkit-scrollbar-thumb {
+  z-index: 20 !important;
+  background-color: #6D5BE0 !important;
+  border-radius: 25px !important;
+  border: 4px solid #6D5BE0 !important;
 }
