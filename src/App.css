@@ -169,3 +169,10 @@ button:hover {
   border-radius: 25px !important;
   border: 4px solid #6D5BE0 !important;
 }
+#consult{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #82ACEB 0%, rgba(173, 181, 255, 0.884) 31.25%, #FFCACA 72.92%, #F38989 100%);
+}

@@ -1,0 +1,9 @@
+.consult-box{
+    display: flex;
+}
+.consult-box > .txt{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}

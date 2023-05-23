@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './home.css';
-
+import { PopupWidget } from 'react-calendly';
 import Fade from 'react-reveal';
 import piggy from '../../Assets/Images/Piggy.png';
 class Landing extends Component {

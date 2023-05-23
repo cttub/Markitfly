@@ -3,6 +3,8 @@ import hands from '../../Assets/Images/HandsPhone.png';
 import enhance from '../../Assets/Icons/enhance.svg';
 import increase from '../../Assets/Icons/increase.svg';
 import improve from '../../Assets/Icons/improve.svg';
+
+import {Link} from 'react-router-dom';
 class Tools extends Component {
     state = {  } 
     render() { 
@@ -47,7 +49,13 @@ class Tools extends Component {
                                    
                                 </div>
 
-                                <a className='pink-txt full-services-link'>See our full services</a>
+                                
+                                <Link className='navigation-btn text-nav'
+                                        onClick={() => {
+                                                    document.querySelector("html").scrollTo(0,0);
+                                                    }}
+                                        to = "/Consult"> <a className='pink-txt full-services-link'>See our full services</a>
+                                </Link>
                         </div>
                         <div className='hands-img col-lg-5'>
                                 <img src = {hands}/>
