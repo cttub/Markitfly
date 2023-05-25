@@ -13,11 +13,11 @@
 }
 .piggy-img > img, .hands-img > img{
     height: 100%;
-    width: 2000px;
+    width: 1000px;
     animation: floater 2s infinite;
 }
 .hands-img > img{
-    width: 1500px;
+    width: 1000px;
 }
 @media only screen and (max-width: 1896px){
     .piggy-img > img, .hands-img > img{
@@ -33,7 +33,7 @@
     }
 
 }
-@media only screen and (max-width: 1613px){
+@media only screen and (max-width: 1123px){
     .hands-img{
         width: 100%;
         position: absolute;
@@ -86,7 +86,12 @@
     height: 100vh;
     display: flex;
     background: linear-gradient(90.4deg, rgba(255, 202, 202, 0.69) 0.33%, rgba(151, 161, 255, 0) 99.65%);
+    overflow: auto !important;
 }
+.tools-container{
+    padding-top: 150px;
+}
+
 .mini-card{
     display: flex;
     align-items: center;
@@ -95,7 +100,7 @@
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
-    padding: 50px;
+    padding: 30px;
 
 }
 .mini-card > .logo{
@@ -105,8 +110,8 @@
     padding: 8px;
 }
 .mini-card > .logo > img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 .tools-txt > h1{
     margin-bottom: 60px;

@@ -10,7 +10,9 @@ class Homepage extends Component {
     render() {
       const fullpageOptions = {
           scrollingSpeed: 1000,
-          navigation: true
+          navigation: true,
+          scrollOverflow: true,
+         
         };
         
     

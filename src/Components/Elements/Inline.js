@@ -9,7 +9,8 @@ useCalendlyEventListener({
 
   return (
     <div className="inline-widget">
-      <InlineWidget url="https://calendly.com/markitflymedia/consultation" />
+      <InlineWidget url="https://calendly.com/markitflymedia/consultation"
+       />
     </div>
   );
 };
