@@ -5,10 +5,14 @@
     box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.25);
     border-radius: 18px;   
     margin-right: 15px;   
+    transition: ease-in-out .2s;
+}
+#serviceCard:hover{
+    transform: scale(1.03);
 }
 
 #serviceCard > div >  .heading{
-    padding: 15px 12px 5px;
+    padding: 40px 12px 5px;
     background-color: white;
     
 }
@@ -41,6 +45,7 @@
 #service-page{
     overflow: hidden;
     position: relative;
+    padding-bottom: 200px;
     background: linear-gradient(180deg, #82ACEB 0%, rgba(173, 181, 255, 0.884) 31.25%, #FFCACA 72.92%, #F38989 100%);
 }
 #service-page > .heading{
@@ -73,10 +78,11 @@
     margin: auto;
 }
 .service-section > .cards{
-    margin-right: 30px;
-    width: 48%; 
+
+    width: 50%; 
 }
 .service-section > .desc{
+    padding-right: 100px;
     width: 40%;
 }
 
@@ -100,11 +106,57 @@
     right: -100px;
     animation: bubbleFloat 3s infinite;
 }
-@media only screen and (max-width: 1145px){
+.bubbleThree{
+    width: 1100px;
+    right: -100px;
+    top: -250px;
+    animation: bubbleFloat 3s infinite;
+    
+}
+.bubbleFour{
+    position: absolute;
+    width: 700px;
+    z-index: 1;
+    left: -100px;
+    top: -200px;
+    animation: bubbleFloatOpposite 3s infinite;
+  
+}
+#service-page > .calender-block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service-page > .calender-block  > .calendar-component{
+    display: flex;
+    justify-content: center;
+}
+#service-page > .calender-block > .calendar-component{
+    z-index: 2;
+}
+
+@media only screen and (max-width: 1474px){
+    #serviceCard{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 1271px){
     .service-section > .cards{
         width: 60%; 
     }
 
+    
+}
+@media only screen and (max-width: 1088px){
+    #serviceCard{
+        width: 280px;
+    }
+}
+@media only screen and (max-width: 1008px){
+    #serviceCard{
+        width: 250px;
+    }
 }
 @media only screen and (max-width: 991px){
     #service-page > .heading {
@@ -138,6 +190,9 @@
     .service-section > .desc{
         display: none;
     }
+    #serviceCard{
+        width: 300px;
+    }
 
 }
 @media only screen and (max-width: 646px){
@@ -147,6 +202,7 @@
     #serviceCard{
         margin-right: 0px;
         margin-bottom: 30px;
+        height: auto;
     }
     #serviceCard > div > p{
         font-size: 20px ;
@@ -165,4 +221,10 @@
     .card-container{
         width: 100%;
     }
+}
+@media only screen and (max-width: 344px){
+        #serviceCard{
+            width: 250px;
+            height: 450px;
+        }
 }

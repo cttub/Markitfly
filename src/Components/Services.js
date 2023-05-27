@@ -5,12 +5,17 @@ import girl from '../Assets/Images/3D.png';
 import Fade from 'react-reveal/Fade';
 import artTools from '../Assets/Icons/artTools.svg';
 import pencil from '../Assets/Icons/pencil.svg';
+import mega from '../Assets/Icons/megaphone.svg';
+import dev from '../Assets/Icons/dev.svg';
+import progression from '../Assets/Icons/progression.svg';
+import light from '../Assets/Icons/lightbulb.svg';
 
 import bubbleOne from '../Assets/Bubbles/1.png';
 import bubbleTwo from '../Assets/Bubbles/2.png';
 import bubbleThree from '../Assets/Bubbles/3.png';
 import bubbleFour from '../Assets/Bubbles/4.png';
 
+import Calender from './Elements/Calendar';
 
 class Services extends Component {
     state = {  } 
@@ -21,7 +26,7 @@ class Services extends Component {
                     <div className='txt col-lg-6'>
                         <h1>We have variety of services that fits to your business needs</h1>
                     </div>
-                    <Fade right duration={1500}><div className='img col-lg-4'>
+                    <Fade up duration={2000}><div className='img col-lg-4'>
                         <img src={girl}/>
                     </div></Fade>
                 </div>
@@ -33,25 +38,25 @@ class Services extends Component {
                             <h2 className='pink-txt'>Design Services</h2>
                             <h1>Enhance your Branding</h1>
                             <div className='card-container'>
-                                   <Fade duration = {1500}><ServiceCard className = "info-card"
+                                   <ServiceCard className = "info-card"
                                     icon = {artTools}
                                     name = "Full Website Design"
                                     text = "Create a professional and effective online presence. We design custom websites that are tailored to your specific needs."
                                     bg = "pink-purple"
-                                    /></Fade> 
-                                    <Fade duration = {2000}><ServiceCard className = "info-card"
+                                    />
+                                    <ServiceCard className = "info-card"
                                     icon = {pencil}
                                     name = "Logo and Brand Design"
                                     text = "Create a strong visual identity for your business. Give your business a unique and memorable brand to stand out from your competition."
                                     bg = "blue-teal"
-                                    /></Fade>
+                                    />
                             </div>
                         </div>
-                        <div className='desc'>
+                        <Fade right duration={1000}><div className='desc'>
                             <h2>Designing your ideal brand</h2>
                             <p>With our design services, we can help make your business stand out from the crowd. Our team uses great creativity and expertise to deliver unique designs tailored to your specific needs.</p>
 
-                        </div>
+                        </div></Fade>
 
                     </div>
             </div>
@@ -61,33 +66,69 @@ class Services extends Component {
                     <img className='bubbleTwo bubble-img' src={bubbleTwo}/>
                     <div className='service-section'>
                          
-                        <div className='desc'>
-                            <h2>Designing your ideal brand</h2>
-                            <p>With our design services, we can help make your business stand out from the crowd. Our team uses great creativity and expertise to deliver unique designs tailored to your specific needs.</p>
+                    <Fade left duration={1000}><div className='desc'>
+                            <h2>Click and Conversion Optimization</h2>
+                            <p>Our advanced Google advertising strategies and web development services can help you improve your online presence, increase traffic, and boost conversions.</p>
 
-                        </div>
+                        </div></Fade>
                         <div className='cards'>
-                            <h2 className='pink-txt'>Design Services</h2>
-                            <h1>Enhance your Branding</h1>
+                            <h2 className='pink-txt'>Clientele Optimization Services</h2>
+                            <h1>Increase in Online Presence</h1>
                             <div className='card-container'>
-                                   <Fade duration = {1500}><ServiceCard className = "info-card"
-                                    icon = {artTools}
-                                    name = "Full Website Design"
-                                    text = "Create a professional and effective online presence. We design custom websites that are tailored to your specific needs."
-                                    bg = "pink-purple"
-                                    /></Fade> 
-                                    <Fade duration = {2000}><ServiceCard className = "info-card"
-                                    icon = {pencil}
-                                    name = "Logo and Brand Design"
-                                    text = "Create a strong visual identity for your business. Give your business a unique and memorable brand to stand out from your competition."
-                                    bg = "blue-teal"
-                                    /></Fade>
+                                   <ServiceCard className = "info-card"
+                                    icon = {mega}
+                                    name = "Google Advertisement"
+                                    text = "Google advertising can help you reach your target audience. We optimize your campaigns to increase conversions and maximize your return on investment."
+                                    bg = "purple-blue"
+                                    />
+                                    <ServiceCard className = "info-card"
+                                    icon = {dev}
+                                    name = "Website Development"
+                                    text = "Help bring your website to life. We develop custom websites that are optimize across all platforms for the best user experience."
+                                    bg = "pink-red"
+                                    />
                             </div>
                         </div>
 
                     </div>
             </div>
 
+            <div className='full-service'>
+                    <img className='bubbleThree bubble-img' src={bubbleThree}/>
+                    <div className='service-section'>
+                        <div className='cards'>
+                            <h2 className='pink-txt'>Performance Boost Services</h2>
+                            <h1>Improve Business Strategies</h1>
+                            <div className='card-container'>
+                                   <ServiceCard className = "info-card"
+                                    icon = {progression}
+                                    name = "Progression Meetings"
+                                    text = "Stay accountable and make progress towards your goals. We provide regular meetings to review your objectives, track your progress, and identify pain points."
+                                    bg = "pink-purple"
+                                    />
+                                    <ServiceCard className = "info-card"
+                                    icon = {light}
+                                    name = "Problem-Solving Analysis"
+                                    text = "Overcome challenges and roadblocks that may be hindering your growth. We help analyze problems and brainstorm solutions for you to overcome obstacles for your success."
+                                    bg = "blue-teal"
+                                    />
+                            </div>
+                        </div>
+                        <Fade right duration={1000}><div className='desc'>
+                            <h2>Consultation and Analysis</h2>
+                            <p>Have one-on-one consultations with us and we will assess your business to identify growth opportunities and ways to improve your numbers.</p>
+
+                        </div></Fade>
+
+                    </div>
+            </div>
+
+
+                <div className='calender-block'>
+                    <div className='calendar-component'><Calender/></div>
+                    
+                    <img className='bubble-img bubbleFour' src={bubbleFour}/>
+                </div>
 
             </div>
 
