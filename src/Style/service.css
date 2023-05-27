@@ -1,7 +1,51 @@
+#serviceCard{
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;   
+    margin-right: 15px;   
+}
+
+#serviceCard > div >  .heading{
+    padding: 15px 12px 5px;
+    background-color: white;
+    
+}
+#serviceCard > div >  .heading > img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+#serviceCard > div > p{
+    padding: 40px 12px;
+    height: 100%;
+    color: white;
+
+}
+.pink-purple{
+    background: linear-gradient(180deg, #FF0E73 0%, #6D5BE0 100%);
+}
+.blue-teal{
+    background: linear-gradient(180deg, #6D5BE0 0%, #55EFC4 100%);
+}
+.purple-blue{
+    background: linear-gradient(180deg, #EB00FF 0%, #3F2FFF 100%);
+}
+.pink-red{
+    background: linear-gradient(180deg, #FF0BBB 0%, #E42E2E 100%);
+}
+
+
+
+
 #service-page{
+    overflow: hidden;
+    position: relative;
     background: linear-gradient(180deg, #82ACEB 0%, rgba(173, 181, 255, 0.884) 31.25%, #FFCACA 72.92%, #F38989 100%);
 }
 #service-page > .heading{
+    position: relative;
+    z-index: 3;
     background: linear-gradient(180deg, #6D5BE0 0%, rgba(155, 141, 242, 0.37) 100%);
     height: 400px;
     display: flex;
@@ -9,11 +53,116 @@
     justify-content: center;
     align-items: center;
     padding-top: 100px;
+    margin-bottom: 20px;
 }
 #service-page > .heading > .img > img{
     width: 100%;
     
 }
-.contact-cta{
-    float: right;
+.full-service{
+    margin-bottom: 100px;
+    position: relative;
+    padding: 30px;
+}
+.service-section{
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.service-section > .cards{
+    margin-right: 30px;
+    width: 48%; 
+}
+.service-section > .desc{
+    width: 40%;
+}
+
+.card-container{
+    display: flex;
+}
+.bubble-img{
+    position: absolute;
+    z-index: 1;
+    opacity: 50%;
+}
+.bubbleOne{
+    width: 1000px;
+    top: -30px;
+    left: -200px;
+    animation: bubbleFloatOpposite 3s infinite;
+}
+.bubbleTwo{
+    width: 600px;
+    top: -100px;
+    right: -100px;
+    animation: bubbleFloat 3s infinite;
+}
+@media only screen and (max-width: 1145px){
+    .service-section > .cards{
+        width: 60%; 
+    }
+
+}
+@media only screen and (max-width: 991px){
+    #service-page > .heading {
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+    }
+    #service-page > .heading > .img{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }    
+    #service-page > .heading > .img > img{
+        width: 50%;
+        opacity: 40%;
+
+    }
+    #service-page > .heading > .txt {
+        z-index: 2;
+
+    }
+
+}
+@media only screen and (max-width: 929px){
+    .service-section > .cards{
+        width: 100%; 
+    }
+    .service-section > .desc{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 646px){
+    .card-container{
+        display: block;
+    }
+    #serviceCard{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #serviceCard > div > p{
+        font-size: 20px ;
+    }
+}
+@media only screen and (max-width: 538px){
+    #service-page > .heading > .img{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 359px){
+    #serviceCard{
+        width: 100%;
+    }
+    .card-container{
+        width: 100%;
+    }
 }

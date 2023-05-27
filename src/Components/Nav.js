@@ -13,6 +13,7 @@ class Nav extends Component {
                                                     }}
                                         to = "/"> <img src ={logo}/>
                 </Link>
+        
                 <Link className='contact-cta'
                                         onClick={() => {
                                                     document.querySelector("html").scrollTo(0,0);

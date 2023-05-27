@@ -111,6 +111,9 @@ button:active {
 }
 
 
+.contact-cta{
+  float: right;
+}
 
 @keyframes floater {
   0% {
@@ -118,6 +121,28 @@ button:active {
   }
   50% {
     transform: translate(0, 40px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes bubbleFloat {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes bubbleFloatOpposite {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -20px);
   }
   100% {
     transform: translate(0, 0);
@@ -202,4 +227,9 @@ button:active {
 }
 #nav > a >  img:active{
   transform: scale(1);
+}
+@media only screen and (max-width: 538px){
+  .contact-cta{
+    display: none;
+  }
 }

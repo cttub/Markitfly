@@ -7,13 +7,13 @@ class ServiceCard extends React.Component {
        
         return (
             
-            <div id = "serviceCard">
+            <div id = "serviceCard" className={this.props.bg}>
                 <div>
                     <div className='heading'>
                         <img src ={this.props.icon}/>
                         <p className='name'><b>{this.props.name}</b></p>
                     </div>
-                    <p>{this.props.text}</p>    
+                    <p >{this.props.text}</p>    
              </div>   
             </div>
         );
