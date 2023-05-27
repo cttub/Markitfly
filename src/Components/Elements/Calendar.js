@@ -14,12 +14,12 @@ const Calendar = () => {
           </div>
           <div className="calendar">
             
-                <InlineWidget url="https://calendly.com/markitflymedia/consultation" 
+                <InlineWidget className = "calendly" url="https://calendly.com/markitflymedia/consultation" 
                         styles={{
                         height: '600px',
-                        width: '500px'
+                        width: '500px',
                        
-                      
+        
                         }}
                         pageSettings={{
                         hideEventTypeDetails: true,

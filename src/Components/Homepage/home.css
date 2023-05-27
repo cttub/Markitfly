@@ -24,7 +24,6 @@
         height: 100%;
         width: 1000px;
     }
-
 }
 
 @media only screen and (max-width: 2104px){
@@ -49,7 +48,6 @@
         position: absolute;
         z-index: 1;
         opacity: 20% !important;
-
     }
     .landing-txt{
         z-index: 2;
@@ -59,14 +57,12 @@
         backdrop-filter: blur(5px);
         border-radius: 16px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      
     }
 }
 @media only screen and (max-width: 953px){
     .landing-txt{
         width: 90%;
     }
-
 }
 @media only screen and (max-width: 646px){
     .landing-txt{
@@ -85,24 +81,24 @@
 #tools{
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(90.4deg, rgba(255, 202, 202, 0.69) 0.33%, rgba(151, 161, 255, 0) 99.65%);
-    overflow: auto !important;
-}
-.tools-container{
-    padding-top: 150px;
+    overflow: hidden !important;
 }
 
 .mini-card{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
-    padding: 30px;
+    padding: 20px;
 
 }
+
 .mini-card > .logo{
     background: #FFFFFF;
     box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
@@ -114,21 +110,34 @@
     height: 70px;
 }
 .tools-txt > h1{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .mini-card > .txt{
     margin-left: 50px;
 }
+@media only screen and (max-width: 1272px){
+    #tools{
+        overflow-y: auto !important;
+    }
 
+}
 @media only screen and (max-width: 781px){
+    #tools{
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .hands-img{
+        display: none;
+    }
     .mini-card{
         display: block;
     }
     .mini-card > .logo{
         margin: auto;
-        margin-bottom: 40px;
-        width: 150px;
+        margin-bottom: 10px;
+        width: 100px;
         display: flex;
         justify-content: center;
     }
@@ -143,4 +152,34 @@
         border-top: solid ;
         padding-top: 10px;
     }
+}
+/*Consulting*/
+#consulting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #EFFFFB 0%, #E8E8FF 44.79%, #6D5BE0 100%);
+}
+#consulting > .phone-img > img{
+    width: 100%;
+   
+}
+.consult-button{
+    margin-top: 30px;
+    float: right;
+}
+.consult-button > h6{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+@media only screen and (max-width: 781px){
+    #consulting{
+        padding: 15px;
+    }
+    #consulting > .phone-img{
+        display: none;
+    }
+
 }

@@ -3,7 +3,7 @@ import hands from '../../Assets/Images/HandsPhone.png';
 import enhance from '../../Assets/Icons/enhance.svg';
 import increase from '../../Assets/Icons/increase.svg';
 import improve from '../../Assets/Icons/improve.svg';
-
+import Fade from 'react-reveal/Fade';
 import {Link} from 'react-router-dom';
 class Tools extends Component {
     state = {  } 
@@ -12,10 +12,10 @@ class Tools extends Component {
             <div id='tools'>
 
                  <div className='tools-container'>
-                        <div className='tools-txt col-lg-6'>
+                        <div className='tools-txt col-lg-5'>
                                 <h1>We give you the tools to give you maximum potential</h1>
 
-                                <div className='mini-card col-lg-8'>
+                                <Fade left duration= {1500}><div className='mini-card col-lg-8'>
                                     <div className='logo'>
                                         <img src={enhance}/>
                                     </div>
@@ -24,9 +24,9 @@ class Tools extends Component {
                                         <p className='small-txt'>Elevate your business with our standout design services, including graphic, logo, and web design.</p>
 
                                     </div>
-                                </div>
+                                </div></Fade>
 
-                                <div className='mini-card col-lg-8'>
+                                <Fade left duration= {1800}> <div className='mini-card col-lg-8'>
                                     <div className='logo'>
                                         <img src={increase}/>
                                     </div>
@@ -35,9 +35,9 @@ class Tools extends Component {
                                         <p className='small-txt'>Thrive your presence with our expertise in Google Analytics, and Web Development.</p>
 
                                     </div>
-                                </div>
+                                </div></Fade>
 
-                                <div className='mini-card col-lg-8'>
+                                <Fade left duration= {2000}><div className='mini-card col-lg-8'>
                                     <div className='logo'>
                                         <img src={improve}/>
                                     </div>
@@ -47,17 +47,17 @@ class Tools extends Component {
 
                                     </div>
                                    
-                                </div>
+                                </div></Fade>
 
                                 
                                 <Link className='navigation-btn text-nav'
                                         onClick={() => {
                                                     document.querySelector("html").scrollTo(0,0);
                                                     }}
-                                        to = "/Consult"> <a className='pink-txt full-services-link'>See our full services</a>
+                                        to = "/Services"> <a className='pink-txt full-services-link'>See our full services</a>
                                 </Link>
                         </div>
-                        <div className='hands-img col-lg-5'>
+                        <div className='hands-img col-lg-6'>
                                 <img src = {hands}/>
                         </div>
 

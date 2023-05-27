@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './home.css';
-import { PopupWidget } from 'react-calendly';
+
 import Fade from 'react-reveal';
 import piggy from '../../Assets/Images/Piggy.png';
+import {Link} from 'react-router-dom';
 class Landing extends Component {
     state = {  } 
     render() { 
@@ -12,9 +13,15 @@ class Landing extends Component {
                         <div className='landing-txt col-lg-6'>
                             <h1 className='purple-txt'>Fuel Your Business Growth with Our Marketing Solutions</h1>
                             <p>We care about our clients and their businesses. Let us build up your business to your needs.</p>
-                            <a className="orange-txt" href="#">
-                            Book your first consultation at no cost to you
-                            </a>
+                            
+                            <Link className='navigation-btn text-nav'
+                                        onClick={() => {
+                                                    document.querySelector("html").scrollTo(0,0);
+                                                    }}
+                                        to = "/Consult"> <a className="orange-txt" href="#">
+                                        Book your first consultation at no cost to you
+                                        </a>
+                            </Link>
                         </div>
                         <Fade right><div className='piggy-img col-lg-5'>
                             <img src = {piggy}/>
