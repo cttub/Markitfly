@@ -14,7 +14,7 @@ const Calendar = () => {
             </div>
           </div>
           <div className="calendar">
-            
+                 
                 <InlineWidget className = "calendly" url="https://calendly.com/markitflymedia/consultation" 
                         styles={{
                         height: '600px',

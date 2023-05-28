@@ -28,7 +28,7 @@ class Consulting extends Component {
                                         </button>
                             </Link>
 
-                        <h6 className='white-txt'>Book your first consultation at no cost to you</h6>
+                        <h6 className='white-txt'>Start your Markitfly Journey Today</h6>
                     </div></Fade>
                 </div>
 
