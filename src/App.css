@@ -34,6 +34,9 @@ a {
   text-decoration: none !important;
   transition: ease-in-out .3s;
 }
+a.white-link:hover{
+  color: #FF0E73 !important;
+}
 a::after {
   content: '';
   position: absolute;
@@ -155,6 +158,7 @@ button:active {
   border-radius: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 @media only screen and (max-width: 1896px){
   h1{
     font-size: 40px !important;
@@ -210,6 +214,13 @@ button:active {
   height: 100vh;
   background: linear-gradient(180deg, #82ACEB 0%, rgba(173, 181, 255, 0.884) 31.25%, #FFCACA 72.92%, #F38989 100%);
 }
+@media only screen and (max-width: 1073px){
+  #consult{
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 #fp-nav>ul>li>a>span{
   background: #FF0E73 !important;
 }
@@ -233,4 +244,111 @@ button:active {
   .contact-cta{
     display: none;
   }
+}
+/*Footer*/
+#footer{
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#footer > img{
+  position: absolute;
+  width: 200px;
+  right: 10px;
+}
+#footer > .column{
+  padding: 10px;
+  margin-right: 20px;
+}
+#footer > .column > .white-link{
+  font-weight: unset !important;
+}
+#footer > .column > .txt, #footer > .column > .white-link > .txt{
+  margin-bottom: 2px;
+}
+.footer-red{
+  background: #F38989;
+}
+.footer-purple{
+  background: #6D5BE0;
+}
+@media only screen and (max-width: 1300px){
+   a{
+    text-decoration: none !important;
+   }
+}
+@media only screen and (max-width: 837px){
+  .hide-foot{
+    display: none;
+  }
+}
+@media only screen and (max-width: 407px){
+  .hide-foot-img{
+    display: none;
+  }
+}
+
+/*Terms of Use and Privacy*/
+#terms, #privacy{
+  background: linear-gradient(180deg, #82ACEB 0%, rgba(173, 181, 255, 0.884) 31.25%, #FFCACA 72.92%, #F38989 100%);
+  padding: 100px;
+}
+@media only screen and (max-width: 456px){
+  #terms, #privacy{
+    padding: 40px;
+    padding-top: 100px;
+  }
+}
+.calendly-service{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6D5BE0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  z-index: 999;
+  transition: ease-in-out .2s;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+}
+
+.arrow-circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.arrow-circle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+.back-to-top:active{
+  transform: scale(1);
 }

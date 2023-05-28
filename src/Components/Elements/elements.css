@@ -15,3 +15,30 @@
     align-self: center;
 
 }
+.consult-box > .calendar{
+    display: flex;
+}
+@media only screen and (max-width: 1023px){
+    .consult-box{
+        padding: 100px;
+    }
+}
+@media only screen and (max-width: 959px){
+    .consult-box{
+       display: block;
+    }
+}
+@media only screen and (max-width: 809px){
+    .consult-box > .calendar{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 535px){
+    .consult-box{
+
+        padding: 10px;
+        padding-top: 30px;
+   
+    }
+}

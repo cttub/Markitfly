@@ -10,6 +10,7 @@ const Calendar = () => {
               <h2 className="pink-txt">First Consultation Free!</h2>
               <h1>Schedule a Meeting Today!</h1>
               <p>Schedule a personal meeting with us and we will analyze your business and how we can grow your numbers!</p>
+
             </div>
           </div>
           <div className="calendar">

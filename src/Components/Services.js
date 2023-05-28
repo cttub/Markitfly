@@ -17,6 +17,8 @@ import bubbleFour from '../Assets/Bubbles/4.png';
 
 import Calender from './Elements/Calendar';
 
+import Footer from './Elements/Footer';
+
 class Services extends Component {
     state = {  } 
     render() { 
@@ -129,6 +131,10 @@ class Services extends Component {
                     
                     <img className='bubble-img bubbleFour' src={bubbleFour}/>
                 </div>
+
+                <Footer
+                background = "footer-red"/>
+             
 
             </div>
 

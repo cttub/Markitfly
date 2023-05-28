@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Landing from './Homepage/Landing';
 import ReactFullpage from '@fullpage/react-fullpage';
-
 import Tools from './Homepage/Tool';
 import Consulting from './Homepage/Consulting';
 const licenseKey = '5OHLK-PXI0J-1K60I-BJ6SI-TOONN';
