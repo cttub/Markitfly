@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './home.css';
-
 import Fade from 'react-reveal';
 import piggy from '../../Assets/Images/Piggy.png';
 import {Link} from 'react-router-dom';

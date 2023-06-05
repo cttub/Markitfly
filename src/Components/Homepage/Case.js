@@ -6,13 +6,14 @@ import papers from '../../Assets/Icons/Papers.svg';
 import heart from '../../Assets/Images/heart.png';
 import speech from '../../Assets/Images/speech.png';
 import cloud from '../../Assets/Images/cloud.png';
+import Fade from 'react-reveal/Fade';
 class Case extends Component {
     state = {  } 
     render() { 
         return (
             <div id = "case-study-section">
                 <div style={{zIndex: "1"}}>
-                    <h1>Our Case Studies</h1>
+                    <Fade up><h1>Our Case Studies</h1></Fade>
                     <div className='case-box'>
                         <CaseCover
                         bg = "pink-purple-horizontal"
