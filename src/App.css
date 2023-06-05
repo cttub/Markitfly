@@ -118,7 +118,17 @@ button:active {
 .contact-cta{
   float: right;
 }
-
+@keyframes inflate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes floater {
   0% {
     transform: translate(0, 0);

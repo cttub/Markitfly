@@ -185,3 +185,64 @@
     }
 
 }
+/*Case*/
+#case-study-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+    background: linear-gradient(180.04deg, #E8E8FF -8.45%, #EFFFFB 99.97%)
+}
+.ab-img{
+    position: absolute;
+}
+#case-study-section > .cloud{
+    width: 500px;
+}
+#case-study-section > .cloudTop{
+    top: 0px;
+    left: -100px;
+    opacity: 60%;
+    animation: bubbleFloat infinite 5s;
+}
+#case-study-section > .cloudBottom{
+    bottom: -150px;
+    right: -100px;
+    animation: bubbleFloat infinite 5s;
+}
+#case-study-section > .speech-img{
+    width: 200px;
+    bottom: 70px;
+    left: 30px;
+    animation: inflate infinite 2s;
+}
+#case-study-section > .heart-img{
+    width: 200px;
+    top: 20px;
+    right: 100px;
+    animation: bubbleFloat infinite 3s;
+}
+#case-study-section > div > h1{
+    margin-bottom: 30px;
+}
+#case-study-section > div > .case-box{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+#case-study-section > div > p{
+    text-align: center;
+    margin-bottom: 3px;
+}
+@media only screen and (max-width:768px){
+    #case-study-section{
+        height: auto;
+    }
+    #case-study-section > div > .case-box{
+        display: block;
+        border: solid;
+    }
+}
