@@ -240,9 +240,14 @@
 @media only screen and (max-width:768px){
     #case-study-section{
         height: auto;
+        text-align: center;
     }
+
     #case-study-section > div > .case-box{
         display: block;
-        border: solid;
+        text-align: left;
+    }
+    .ab-img{
+        display: none;
     }
 }
