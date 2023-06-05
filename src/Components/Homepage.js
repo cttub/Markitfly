@@ -15,29 +15,6 @@ class Homepage extends Component {
       navigation: true,
     };
 
-    // Check if the current device is a mobile device
-    const isMobileDevice = window.innerWidth <= 767;
-
-    if (isMobileDevice) {
-      // Render the sections without ReactFullpage on mobile devices
-      return (
-        <div>
-          <div className='section'>
-            <Landing />
-          </div>
-          <div className='section'>
-            <Tools />
-          </div>
-          <div className='section'>
-            <Case />
-          </div>
-          <div className='section'>
-            <Consulting />
-          </div>
-        </div>
-      );
-    }
-
     return (
       <ReactFullpage
         licenseKey={licenseKey}
