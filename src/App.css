@@ -367,3 +367,13 @@ button:active {
 .back-to-top:active{
   transform: scale(1);
 }
+@media only screen and (max-width: 610px){
+  h1{
+    font-size: 30px !important;
+  }
+}
+@media only screen and (max-width: 424px){
+  h1{
+    font-size: 25px !important;
+  }
+}

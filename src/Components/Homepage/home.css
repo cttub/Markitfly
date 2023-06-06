@@ -251,3 +251,9 @@
         display: none;
     }
 }
+@media only screen and (max-width: 424px){
+    #tools > div > div.tools-txt.col-lg-5 > h1{
+        padding-bottom: 15px;
+        border-bottom: solid 1px;
+    }
+  }
