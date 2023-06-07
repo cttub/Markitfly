@@ -17,7 +17,7 @@ class Case extends Component {
                     <div className='case-box'>
                         <CaseCover
                         bg = "pink-purple-horizontal"
-                        heading = "Using Google Analytics to Improve 7 years of business clientele"
+                        heading = "Using Google Analytivs to grow and improve business clientele."
                         icon = {magnify}/>
                         <CaseCover
                         bg = "green-blue-horizontal"
