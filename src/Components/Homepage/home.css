@@ -257,3 +257,11 @@
         border-bottom: solid 1px;
     }
   }
+
+@media only screen and (max-width: 644px) {
+    #fuel{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}

@@ -250,11 +250,7 @@ button:active {
 #nav > a >  img:active{
   transform: scale(1);
 }
-@media only screen and (max-width: 538px){
-  .contact-cta{
-    display: none;
-  }
-}
+
 /*Footer*/
 #footer{
   position: relative;
@@ -283,6 +279,9 @@ button:active {
 }
 .footer-purple{
   background: #6D5BE0;
+}
+#mobile-home{
+  display: none;
 }
 @media only screen and (max-width: 1300px){
    a{
@@ -323,7 +322,11 @@ button:active {
 
 }
 
-
+@media only screen and (max-width: 356px){
+  .contact-cta{
+   display: none;
+  }
+}
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -367,6 +370,9 @@ button:active {
 .back-to-top:active{
   transform: scale(1);
 }
+.mobileShow{
+  display: none !important;
+}
 @media only screen and (max-width: 610px){
   h1{
     font-size: 30px !important;
@@ -375,5 +381,19 @@ button:active {
 @media only screen and (max-width: 424px){
   h1{
     font-size: 25px !important;
+  }
+}
+@media only screen and (max-width: 536px){
+  #mobile-home{
+    display: block;
+  }
+  .mobileHide{
+    display: none !important;
+  }
+  .mobileShow{
+    display: block;
+  }
+  #fp-nav{
+    display: none;
   }
 }
