@@ -9,7 +9,7 @@ class Landing extends Component {
     render() { 
         return (
             <div id='mobile-landing'>
-                <img src={piggy}/>
+                <img width={400} src={piggy}/>
                 <div>
                  <h1 className='purple-txt'>Fuel Your Business Growth with Our Marketing Solutions</h1>
                  <p>We care about our clients and their businesses. Let us build up your business to your needs.</p>

@@ -1,8 +1,21 @@
+#mobile-home{
+    overflow-x: hidden;
+}
 #mobile-landing{
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 20px;
     background: linear-gradient(180deg, #B1A5FF 0%, #EFFFFB 82.82%, #FFFFFF 100%);
-    text-align: center;
+}
+#mobile-landing > div{
+    z-index: 2;
+}
+#mobile-landing > img{
+    animation: floater infinite 4s;
+    opacity: 20%;
+    z-index: 1;
+    position: absolute;
+    right: -100px;
 }
