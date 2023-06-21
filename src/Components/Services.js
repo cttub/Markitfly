@@ -9,7 +9,7 @@ import mega from '../Assets/Icons/megaphone.svg';
 import dev from '../Assets/Icons/dev.svg';
 import progression from '../Assets/Icons/progression.svg';
 import light from '../Assets/Icons/lightbulb.svg';
-
+import {Link} from 'react-router-dom';
 import bubbleOne from '../Assets/Bubbles/1.png';
 import bubbleTwo from '../Assets/Bubbles/2.png';
 import bubbleThree from '../Assets/Bubbles/3.png';
@@ -37,9 +37,14 @@ class Services extends Component {
                     <img className='bubbleOne bubble-img' src={bubbleOne}/>
                     <div className='service-section'>
                         <div className='cards'>
-                            <h2 className='pink-txt'>Design Services</h2>
-                            <h1>Enhance your Branding</h1>
+                         <section>
+                            <div>
+                                <h2 className='pink-txt'>Design Services</h2>
+                                <h1>Enhance your Branding</h1>
+                            </div>
+                        </section>
                             <div className='card-container'>
+                                <div>
                                    <ServiceCard className = "info-card"
                                     icon = {artTools}
                                     name = "Full Website Design"
@@ -52,6 +57,7 @@ class Services extends Component {
                                     text = "Create a strong visual identity for your business. Give your business a unique and memorable brand to stand out from your competition."
                                     bg = "blue-teal"
                                     />
+                                </div>
                             </div>
                         </div>
                         <Fade right duration={1000}><div className='desc'>
@@ -74,9 +80,15 @@ class Services extends Component {
 
                         </div></Fade>
                         <div className='cards'>
-                            <h2 className='pink-txt'>Clientele Optimization Services</h2>
-                            <h1>Increase in Online Presence</h1>
+                            <section>
+                                <div>
+                                    <h2 className='pink-txt'>Clientele Optimization Services</h2>
+                                    <h1>Increase in Online Presence</h1>
+                                </div>
+                            </section>
+                           
                             <div className='card-container'>
+                                <div>
                                    <ServiceCard className = "info-card"
                                     icon = {mega}
                                     name = "Google Advertisement"
@@ -89,6 +101,7 @@ class Services extends Component {
                                     text = "Help bring your website to life. We develop custom websites that are optimize across all platforms for the best user experience."
                                     bg = "pink-red"
                                     />
+                                    </div>
                             </div>
                         </div>
 
@@ -99,9 +112,14 @@ class Services extends Component {
                     <img className='bubbleThree bubble-img' src={bubbleThree}/>
                     <div className='service-section'>
                         <div className='cards'>
-                            <h2 className='pink-txt'>Performance Boost Services</h2>
-                            <h1>Improve Business Strategies</h1>
+                            <section>
+                            <div>
+                                <h2 className='pink-txt'>Performance Boost Services</h2>
+                                <h1>Improve Business Strategies</h1>
+                            </div>
+                        </section>
                             <div className='card-container'>
+                                <div>
                                    <ServiceCard className = "info-card"
                                     icon = {progression}
                                     name = "Progression Meetings"
@@ -114,6 +132,7 @@ class Services extends Component {
                                     text = "Overcome challenges and roadblocks that may be hindering your growth. We help analyze problems and brainstorm solutions for you to overcome obstacles for your success."
                                     bg = "blue-teal"
                                     />
+                                 </div>
                             </div>
                         </div>
                         <Fade right duration={1000}><div className='desc'>
@@ -128,10 +147,21 @@ class Services extends Component {
 
                 <div className='calender-block'>
                     <div className='calendar-component'><Calender/></div>
-                    
                     <img className='bubble-img bubbleFour' src={bubbleFour}/>
                 </div>
 
+                <div className='service-cta morphism'>
+                    <h2 className='pink-txt'>Want to start building?</h2>
+                    <h1 style={{marginBottom: "30px"}}>Schedule a Free Consultation</h1>
+                <Link 
+                                        onClick={() => {
+                                                    document.querySelector("html").scrollTo(0,0);
+                                                    }}
+                                        to = "/Consult"> <button>
+                                        Book Now
+                                        </button>
+                </Link>
+                </div>
                 <Footer
                 background = "footer-red"/>
              

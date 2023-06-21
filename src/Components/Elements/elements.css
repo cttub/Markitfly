@@ -30,20 +30,20 @@
        display: block;
     }
 }
+@media only screen and (max-width: 710px){
+    .consult-box{
+       width: 100%;
+       padding: 30px;
+       margin: 10px;
+    }
+}
 @media only screen and (max-width: 809px){
     .consult-box > .calendar{
         width: 100%;
     }
 
 }
-@media only screen and (max-width: 535px){
-    .consult-box{
 
-        padding: 10px;
-        padding-top: 30px;
-   
-    }
-}
 
 /*Case Cover*/
 #case-cover{

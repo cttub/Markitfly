@@ -85,7 +85,7 @@
     width: 40%;
 }
 
-.card-container{
+.card-container > div{
     display: flex;
 }
 .bubble-img{
@@ -135,7 +135,9 @@
 #service-page > .calender-block > .calendar-component{
     z-index: 2;
 }
-
+.service-cta{
+    display: none;
+}
 @media only screen and (max-width: 1474px){
     #serviceCard{
         width: 300px;
@@ -193,11 +195,18 @@
     #serviceCard{
         width: 300px;
     }
+    #service-page > div.heading{
+        display: none;
+    }
+    #service-page {
+        padding-top: 100px;
+    }
 
 }
 @media only screen and (max-width: 646px){
-    .card-container{
+    .card-container > div {
         display: block;
+        text-align: center;
     }
     #serviceCard{
         margin-right: 0px;
@@ -207,10 +216,30 @@
     #serviceCard > div > p{
         font-size: 20px ;
     }
+    .card-container{
+        display: flex;
+        justify-content: center;
+    }
+    .cards > section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
 }
 @media only screen and (max-width: 538px){
     #service-page > .heading > .img{
         display: none;
+    }
+    #service-page > div.calender-block{
+        display: none;
+    }
+    .service-cta{
+        display: block;
+        padding: 50px 30px;
+        margin-bottom: 100px;
+        text-align: center;
+
     }
 
 }
@@ -228,3 +257,4 @@
             height: 450px;
         }
 }
+
