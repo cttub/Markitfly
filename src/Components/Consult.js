@@ -7,14 +7,18 @@ class Consult extends Component {
     render() { 
         return (
             <div id='consult'>
+                 <Link
+                    className="contact-cta-mobile"
+                    onClick={() => {
+                        document.querySelector('html').scrollTo(0, 0);
+                    }}
+                    to='/Services'
+                    >
+                    <button>See our Services</button>
+                    </Link>
                  <Calendar/>
              
-                 <Link className='calendly-service'
-                                        onClick={() => {
-                                                    document.querySelector("html").scrollTo(0,0);
-                                                    }}
-                                        to = "/Services"> <button className='purple-btn'>See our Services</button>
-                                </Link>
+                
             </div>
                    
 
