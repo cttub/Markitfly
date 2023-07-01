@@ -13,14 +13,14 @@ class Tools extends Component {
 
                  <div className='tools-container'>
                         <div className='tools-txt col-lg-5'>
-                                <h1>We give you the tools to give you maximum potential</h1>
+                        <h1>We give you the tools to give you maximum potential</h1>
 
                                 <Fade left duration= {1500}><div className='mini-card col-lg-8'>
                                     <div className='logo'>
                                         <img src={enhance}/>
                                     </div>
                                     <div className='txt'>
-                                        <h2>Enhance your Branding</h2>
+                                        <h2><b>Enhance your Branding</b></h2>
                                         <p className='small-txt'>Elevate your business with our standout design services, including graphic, logo, and web design.</p>
 
                                     </div>
@@ -31,7 +31,7 @@ class Tools extends Component {
                                         <img src={increase}/>
                                     </div>
                                     <div className='txt'>
-                                        <h2>Increase in Online Presence</h2>
+                                        <h2><b>Increase in Online Presence</b></h2>
                                         <p className='small-txt'>Thrive your presence with our expertise in Google Analytics, and Web Development.</p>
 
                                     </div>
@@ -42,7 +42,7 @@ class Tools extends Component {
                                         <img src={improve}/>
                                     </div>
                                     <div className='txt'>
-                                        <h2>Improve Business Strategies</h2>
+                                        <h2><b>Improve Business Strategies</b></h2>
                                         <p className='small-txt'>Discuss the pain points in your company so we can help problem-solve your way to success.</p>
 
                                     </div>

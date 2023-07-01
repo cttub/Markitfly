@@ -1,32 +1,39 @@
 import React, { Component } from 'react';
 import logo from '../Assets/markitfly.png';
-import {Link} from 'react-router-dom';
-class Nav extends Component {
-    state = {  } 
-    render() { 
-        return (
-            <div id='nav'>
-                
-                <Link 
-                                        onClick={() => {
-                                                    document.querySelector("html").scrollTo(0,0);
-                                                    }}
-                                        to = "/"> <img src ={logo}/>
-                </Link>
-        
-                <Link className='contact-cta'
-                                        onClick={() => {
-                                                    document.querySelector("html").scrollTo(0,0);
-                                                    }}
-                                        to = "/Consult"> <button>
-                                        Contact Us
-                                        </button>
-                </Link>
-              
+import { Link, useLocation } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
-            </div>
-        );
-    }
-}
- 
+const Nav = () => {
+  const location = useLocation();
+  const isServicePage = location.pathname === '/Services';
+
+  return (
+    <>
+    <Fade down>
+    <div id='nav'>
+      <Link
+        onClick={() => {
+          document.querySelector('html').scrollTo(0, 0);
+        }}
+        to="/"
+      >
+        <img src={logo} alt="Markitfly logo" />
+      </Link>
+
+      <Link
+        className="contact-cta"
+        onClick={() => {
+          document.querySelector('html').scrollTo(0, 0);
+        }}
+        to="/Services"
+      >
+        <button>
+          {isServicePage ? 'Contact Us' : 'See our Services'}
+        </button>
+      </Link>
+    </div></Fade>
+    </>
+  );
+};
+
 export default Nav;

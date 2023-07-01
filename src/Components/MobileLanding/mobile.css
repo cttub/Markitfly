@@ -17,18 +17,18 @@
     padding-bottom: 10px;
 }
 
-#mobile-landing > img{
-    opacity: 30%;
-    animation: floater infinite 4s;
+#mobile-landing > .image > img{
+    animation: bubbleFloat infinite 3s;
+    opacity: 90%;
     z-index: 1;
     position: absolute;
-    top: 50%;
-    right: -100px;
+    top: 54%;
+    left: 100px;
 }
-#mobile-landing > img.cloud{
-    animation: bubbleFloat infinite 5s;
-    top: 0;
-    left: -20%;
+#mobile-landing > .image >  img.cloud{
+    animation: floater infinite 6s;
+    top: -500px;
+    left: -100px;
 }
 #tools-mobile{
     position: relative;

@@ -1,14 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap');
+@font-face {
+  font-family: 'Brock Italic';
+  src: url('../public/fonts/Brockmann-BoldItalic.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brock Medium';
+  src: url('../public/fonts/Brockmann-Medium.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brock Italic Medium';
+  src: url('../public/fonts/Brockmann-MediumItalic.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.txt-outline{
+  -webkit-text-stroke: 1px black;
+
+}
+.txt-shadow{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 body{
   position: relative;
   overflow-x: hidden;
 }
-h1, h2, h3, h4, p, button, a {
-  font-family: 'Inter', sans-serif;
+h1, h3, h4 {
+  font-family: 'Brock Italic', sans-serif;
   color: #171A1B;
 }
+h2{
+  font-family: 'Brock Italic Medium', sans-serif;
+  color: #171A1B;
+  
+}
+p, button, a{
+  font-family: 'Brock Medium', sans-serif;
+  color: #171A1B;
 
-h1, h2 {
+}
+
+h1 {
   font-weight: bold !important;
 }
 

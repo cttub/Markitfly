@@ -26,7 +26,7 @@ class Services extends Component {
             <div id='service-page'>
                 <div className='heading'>
                     <div className='txt col-lg-6'>
-                        <h1>We have variety of services that fits to your business needs</h1>
+                        <h1 className='white-txt txt-shadow'>We have variety of services that fits to your business needs</h1>
                     </div>
                     <Fade up duration={2000}><div className='img col-lg-4'>
                         <img src={girl}/>
@@ -55,7 +55,7 @@ class Services extends Component {
                             </div>
                         </div>
                         <Fade right duration={1000}><div className='desc'>
-                            <h2>Designing your ideal brand</h2>
+                            <h2><b>Designing your ideal brand</b></h2>
                             <p>With our design services, we can help make your business stand out from the crowd. Our team uses great creativity and expertise to deliver unique designs tailored to your specific needs.</p>
 
                         </div></Fade>
@@ -69,7 +69,7 @@ class Services extends Component {
                     <div className='service-section'>
                          
                     <Fade left duration={1000}><div className='desc'>
-                            <h2>Click and Conversion Optimization</h2>
+                            <h2><b>Click and Conversion Optimization</b></h2>
                             <p>Our advanced Google advertising strategies and web development services can help you improve your online presence, increase traffic, and boost conversions.</p>
 
                         </div></Fade>
@@ -117,7 +117,7 @@ class Services extends Component {
                             </div>
                         </div>
                         <Fade right duration={1000}><div className='desc'>
-                            <h2>Consultation and Analysis</h2>
+                            <h2><b>Consultation and Analysis</b></h2>
                             <p>Have one-on-one consultations with us and we will assess your business to identify growth opportunities and ways to improve your numbers.</p>
 
                         </div></Fade>
