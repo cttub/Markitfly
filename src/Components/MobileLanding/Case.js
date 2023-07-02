@@ -6,18 +6,27 @@ import papers from '../../Assets/Icons/Papers.svg';
 import heart from '../../Assets/Images/heart.png';
 import speech from '../../Assets/Images/speech.png';
 import cloud from '../../Assets/Images/cloud.png';
+import client from '../../Assets/Images/client.png';
 import Fade from 'react-reveal/Fade';
+import approved from '../../Assets/Images/check.png';
 class Case extends Component {
     state = {  } 
     render() { 
         return (
             <div id='case-mobile'>
                 <div className='case-container-mobile'>
-                    <Fade up><h1>Our Case Studies</h1></Fade>
+                    <div className='client-approved' style={{display: "flex", alignItems: "center", marginBottom: "10px"}}>
+                    <h2 className='orange-txt'>Client Project Approved!<span><img style={{marginLeft:"10px"}} width="26" src={approved}/></span></h2> 
+                    </div>
+                    <Fade up><h1>Our Projects and Case Studies</h1></Fade>
                     <div className='case-box'>
                         <CaseCover
+                        client = {approved}
+                        type = "Project"
+                        link = "https://www.transformlandmo.com/"
+                        desc = "Visit Project Page"
                         bg = "pink-purple-horizontal"
-                        heading = "Using Google Analytivs to grow and improve business clientele."
+                        heading = "Enhancing Business Branding by developing their online presence | Transformative Lawn and Landscape LLC"
                         icon = {magnify}/>
                         <CaseCover
                         bg = "green-blue-horizontal"

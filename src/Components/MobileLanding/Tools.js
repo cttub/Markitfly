@@ -14,7 +14,10 @@ class Tools extends Component {
                  <div className='tools-container'>
                         <div className='tools-txt col-lg-5'>
                                 <h1>We give you the tools to give you maximum potential</h1>
-
+                               
+                                <Fade right><img  style={{position: "absolute", top: "100px" , right: "-20px", zIndex: "2"}}src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Star-Struck.png" alt="Star-Struck" width="100" height="100" /></Fade>
+                                <Fade left delay = {600}><img  style={{position: "absolute", top: "400px" , left: "-20px", zIndex: "2"}}src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Sparkling%20Heart.png" alt="Sparkling Heart" width="100" height="100" /></Fade>
+                                <Fade right delay = {600}><img  style={{position: "absolute", top: "800px" , right: "-20px", zIndex: "2"}}src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Sunglasses.png" alt="Smiling Face with Sunglasses"  width="100" height="100" /></Fade>
                                 <Fade left duration= {1500}><div className='mini-card col-lg-8'>
                                     <div className='logo'>
                                         <img src={enhance}/>

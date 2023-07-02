@@ -8,7 +8,7 @@ class Consult extends Component {
         return (
             <div id='consult-mobile'>
                
-                 <div id='consulting'>
+                 <div id='consulting' style={{padding: "30px"}}>
                     <Fade left duration={1500}><div className='phone-img col-lg-4'>
                             <img src={phone}/>
                     </div></Fade>

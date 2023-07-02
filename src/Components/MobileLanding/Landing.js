@@ -41,11 +41,13 @@ class Landing extends Component {
             }}
             to="/Consult"
           >
+            
             <a className="pink-txt">
               <p
                 className="orange-txt shadow morphism"
                 style={{ textAlign: 'left', padding: '10px', borderRadius: '10px' }}
               >
+                <img style={{position: "absolute", top: "-10px", right: "0px"}} src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Astonished%20Face.png" alt="Astonished Face" width="30" height="30" />
                 Book your first free consultation!
               </p>
             </a>

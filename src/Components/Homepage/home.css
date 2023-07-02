@@ -194,6 +194,7 @@
 }
 /*Case*/
 #case-study-section{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,7 +237,6 @@
 #case-study-section > div > .case-box{
     display: flex;
     justify-content: space-between;
-    width: 90vw;
     padding-bottom: 10px;
     margin-bottom: 30px;
 }

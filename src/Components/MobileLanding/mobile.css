@@ -51,6 +51,7 @@
 
 #case-mobile{
     position: relative;
+    padding: 30px;
     padding-top: 100px;
     padding-bottom: 10px;
     background: linear-gradient(180.04deg, #E8E8FF -8.45%, #EFFFFB 99.97%);
@@ -60,7 +61,7 @@
 }
 
 #case-mobile > div > h1, #case-mobile > div > p{
-    text-align: center;
+    text-align: left;
 }
 #case-mobile > div > h1{
     margin-bottom: 30px;
