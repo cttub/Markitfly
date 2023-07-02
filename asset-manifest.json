@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.18b050d0.css",
-    "main.js": "/static/js/main.1d9afc01.js",
+    "main.css": "/static/css/main.43fc990b.css",
+    "main.js": "/static/js/main.1eb2c837.js",
     "static/js/787.f0e1aeeb.chunk.js": "/static/js/787.f0e1aeeb.chunk.js",
     "static/media/3D.png": "/static/media/3D.c1d4a84d9ab95860e705.png",
     "static/media/Piggy.png": "/static/media/Piggy.80d6b31fd81adbfa49a8.png",
     "static/media/2.png": "/static/media/2.73b972d60c19d09043ba.png",
     "static/media/4.png": "/static/media/4.2a94d49ffe3fb90a2d46.png",
     "static/media/3.png": "/static/media/3.bd03a5d76ed25d834a40.png",
+    "static/media/check.png": "/static/media/check.ea910b9549d8657528f3.png",
     "static/media/HandsPhone.png": "/static/media/HandsPhone.d7b04c4f4eab59c8d1c4.png",
     "static/media/1.png": "/static/media/1.b551786479dd0310944d.png",
+    "static/media/client.png": "/static/media/client.19dbe8e5ec0c262499f0.png",
     "static/media/cloud.png": "/static/media/cloud.d382b4fd8667efff8579.png",
     "static/media/Phone.png": "/static/media/Phone.9caba996a218f080bb3a.png",
     "static/media/speech.png": "/static/media/speech.c3dd3b9649f9ca6f453c.png",
@@ -33,12 +35,12 @@
     "static/media/pencil.svg": "/static/media/pencil.b302e1612fa859c34b681f36a94c7aeb.svg",
     "index.html": "/index.html",
     "static/media/uparrow.svg": "/static/media/uparrow.b1c8f0db1875ae886541bc3c26e57027.svg",
-    "main.18b050d0.css.map": "/static/css/main.18b050d0.css.map",
-    "main.1d9afc01.js.map": "/static/js/main.1d9afc01.js.map",
+    "main.43fc990b.css.map": "/static/css/main.43fc990b.css.map",
+    "main.1eb2c837.js.map": "/static/js/main.1eb2c837.js.map",
     "787.f0e1aeeb.chunk.js.map": "/static/js/787.f0e1aeeb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18b050d0.css",
-    "static/js/main.1d9afc01.js"
+    "static/css/main.43fc990b.css",
+    "static/js/main.1eb2c837.js"
   ]
 }
