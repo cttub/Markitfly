@@ -29,10 +29,12 @@ class Case extends Component {
                         heading = "Enhancing Business Branding by developing their online presence | Transformative Lawn and Landscape LLC"
                         icon = {magnify}/>
                         <CaseCover
+                        desc = "Coming Soon"
                         bg = "green-blue-horizontal"
                         heading = "Increasing Business Revenue with new strategies and enhanced branding."
                         icon = {money}/>
                         <CaseCover
+                        desc = "Coming Soon"
                         bg = "purple-horizontal"
                         heading = "Branding a Business’ online presence, increasing in traction towards their services"
                         icon = {papers}/>
