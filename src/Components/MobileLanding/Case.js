@@ -16,9 +16,9 @@ class Case extends Component {
             <div id='case-mobile'>
                 <div className='case-container-mobile'>
                     <div className='client-approved' style={{display: "flex", alignItems: "center", marginBottom: "10px"}}>
-                    <h2 className='orange-txt'>Client Project Approved!<span><img style={{marginLeft:"10px"}} width="26" src={approved}/></span></h2> 
+                    <Fade up><h2 className='orange-txt'>Client Project Approved!<span><img style={{marginLeft:"10px"}} width="26" src={approved}/></span></h2> </Fade>
                     </div>
-                    <Fade up><h1>Our Projects and Case Studies</h1></Fade>
+                    <h1>Our Projects and Case Studies</h1>
                     <div className='case-box'>
                         <CaseCover
                         client = {approved}

@@ -13,7 +13,7 @@ class Consult extends Component {
                             <img src={phone}/>
                     </div></Fade>
                     <div className='txt col-lg-6'>
-                        <h2 className='orange-txt'>First Consultation Free!</h2>
+                    <Fade up delay = {200}><h2 className='orange-txt'>First Consultation Free!<span><img style={{marginLeft: "10px"}} src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Partying%20Face.png" alt="Partying Face" width="25" height="25" /></span></h2></Fade>
                         <h1>Business Analysis and Consulting</h1>
                         <p>Schedule a personal meeting with us and we will analyze your business and how we can grow your numbers!</p>
 

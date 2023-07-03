@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import {Link} from 'react-router-dom';
 import hands from '../../Assets/Images/HandsPhone.png';
-import enhance from '../../Assets/Icons/enhance.svg';
-import increase from '../../Assets/Icons/increase.svg';
-import improve from '../../Assets/Icons/improve.svg';
+import enhance from '../../Assets/Icons/enhance.png';
+import increase from '../../Assets/Icons/increase.png';
+import improve from '../../Assets/Icons/improve.png';
 class Tools extends Component {
     state = {  } 
     render() { 

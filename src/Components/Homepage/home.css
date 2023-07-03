@@ -98,6 +98,12 @@
 .mini-card:hover{
     translate: 15px;
 }
+.underline{
+    position: absolute;
+    bottom: -10px;
+    z-index: 1;
+    left: 0;
+}
 @media only screen and (max-width: 480px) {
     .mini-card:hover{
         translate: 0px;
@@ -194,7 +200,6 @@
 }
 /*Case*/
 #case-study-section{
-    
     display: flex;
     justify-content: center;
     align-items: center;

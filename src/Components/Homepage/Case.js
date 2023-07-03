@@ -15,10 +15,10 @@ class Case extends Component {
         return (
             <div id = "case-study-section">
                 <div style={{zIndex: "1"}}>
-                    <div className='client-approved' style={{display: "flex", alignItems: "center", marginBottom: "10px"}}>
+                <Fade up><div className='client-approved' style={{display: "flex", alignItems: "center", marginBottom: "10px"}}>
                         <img width={"50px"} style = {{marginRight: "10px"}} src={client}/> <h2 className='orange-txt'>Client Project Approved!</h2>
-                    </div>
-                    <Fade up><h1>Our Projects and Case Studies</h1></Fade>
+                    </div></Fade>
+                    <h1>Our Projects and Case Studies</h1>
                     <div className='case-box'>
                    
                         <CaseCover

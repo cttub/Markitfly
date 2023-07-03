@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import hands from '../../Assets/Images/HandsPhone.png';
-import enhance from '../../Assets/Icons/enhance.svg';
-import increase from '../../Assets/Icons/increase.svg';
-import improve from '../../Assets/Icons/improve.svg';
+import enhance from '../../Assets/Icons/enhance.png';
+import increase from '../../Assets/Icons/increase.png';
+import improve from '../../Assets/Icons/improve.png';
+import underline from '../../Assets/underline.png';
 import Fade from 'react-reveal/Fade';
 import {Link} from 'react-router-dom';
 class Tools extends Component {
@@ -13,7 +14,7 @@ class Tools extends Component {
 
                  <div className='tools-container'>
                         <div className='tools-txt col-lg-5'>
-                                <h1>We give you the tools to give you maximum potential</h1>
+                        <h1>We give you the tools to give you <span style={{display: "inline-block", position: "relative", zIndex: "2"}}>maximum <img width="200px" className='underline' src={underline}/></span> potential</h1>
 
                                 <Fade left duration= {1500}><div className='mini-card col-lg-8'>
                                     <div className='logo'>
