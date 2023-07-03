@@ -6,7 +6,7 @@ class TermsOfUse extends Component {
         return (
             <div>
             <div id='terms'>
-                <h2 className='purple-txt'>Last updated: 7/1/2023</h2>
+                <h2 className='purple-txt'>Last updated: 7/3/2023</h2>
                 <h1>Terms of Use</h1>
                 <p>Welcome to our website, which is built using the React.js framework. By using our website, you agree to these terms of use, our privacy policy, and any other guidelines or policies that we may post on our website from time to time.</p>
 
@@ -53,7 +53,7 @@ class TermsOfUse extends Component {
                 <br></br><br></br>
               
                 <h2><b>Canva Pro License</b></h2>
-                <p>We use third-party resources like Canva to create imagery and other visual content for our website. When using these resources, certain data may be collected and shared with the third-party provider, in accordance with their own privacy policies. We encourage you to review the privacy policies of these providers to understand how they collect and use your data.</p>
+                <p>We use third-party resources like Canva to create imagery and other visual content for our website, in which we have access to use for commercial and personal use based on their terms and conditions. You can view Canva's License <a className='purple-txt' href='https://www.canva.com/licensing-explained/' target='_blank'>here.</a></p>
 
                 <br></br>
                 <h2><b>Noun Project License</b></h2>
@@ -67,7 +67,7 @@ class TermsOfUse extends Component {
 
                 <br></br>
                 <h2><b>Piggy 3D Component</b></h2>
-                <p>The assets on our website, including but not limited to icons and background bubbles, were created using Canva Pro components and are the property of us, which we have the rights to use in accordance with Canva's terms of use. The 3D rendered objects on our website, such as the flying pig, were created by us using tools like Nomad Sculpt and are the property. We may display these assets on our website or other promotional materials.</p>
+                <p>The assets on our website, including but not limited to icons and background bubbles, were created using Canva Pro components and are the property of us, which we have the rights to use in accordance with <a className='purple-txt'  href='https://www.canva.com/licensing-explained/' target='_blank'>Canva's term of use.</a> The 3D rendered objects on our website, such as the flying pig, were created by us using tools like Nomad Sculpt and are the property. We may display these assets on our website or other promotional materials.</p>
                 <p>By using our website, you agree to these terms and acknowledge that the assets on our website, including the Canva components and the 3D rendered objects, are the property of us and that we own the rights to them. You may not use these assets for any commercial or non-commercial purpose without our express written permission.</p>
             
                 <br></br>
