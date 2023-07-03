@@ -70,7 +70,7 @@ class Services extends Component {
                             </div>
                         </div>
                         <Fade right duration={1000}><div className='desc'>
-                            <h2><b>Designing your ideal brand</b></h2>
+                            <h2><b>Designing your ideal brand<img style={{marginLeft:"10px"}} src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png" alt="Smiling Face with Hearts" width="35" height="35" /></b></h2>
                             <p>With our design services, we can help make your business stand out from the crowd. Our team uses great creativity and expertise to deliver unique designs tailored to your specific needs.</p>
 
                         </div></Fade>
@@ -84,7 +84,7 @@ class Services extends Component {
                     <div className='service-section'>
                          
                     <Fade left duration={1000}><div className='desc'>
-                            <h2><b>Click and Conversion Optimization</b></h2>
+                            <h2><b>Click and Conversion Optimization<img style={{marginLeft:"10px"}}src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Love%20Letter.png" alt="Love Letter" width="35" height="35" /></b></h2>
                             <p>Our advanced Google advertising strategies and web development services can help you improve your online presence, increase traffic, and boost conversions.</p>
 
                         </div></Fade>
@@ -145,7 +145,7 @@ class Services extends Component {
                             </div>
                         </div>
                         <Fade right duration={1000}><div className='desc'>
-                            <h2><b>Consultation and Analysis</b></h2>
+                            <h2><b>Consultation and Analysis<img style={{marginLeft:"10px"}}src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Saluting%20Face.png" alt="Saluting Face" width="35" height="35" /></b></h2>
                             <p>Have one-on-one consultations with us and we will assess your business to identify growth opportunities and ways to improve your numbers.</p>
 
                         </div></Fade>

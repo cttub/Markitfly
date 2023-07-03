@@ -26,6 +26,9 @@
     color: white;
 
 }
+#service-page > div.service-cta.morphism{
+    margin: 20px;
+}
 .pink-purple{
     background: linear-gradient(180deg, #FF0E73 0%, #6D5BE0 100%);
 }
