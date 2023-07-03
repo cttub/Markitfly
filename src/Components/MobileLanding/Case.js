@@ -8,15 +8,64 @@ import speech from '../../Assets/Images/speech.png';
 import cloud from '../../Assets/Images/cloud.png';
 import client from '../../Assets/Images/client.png';
 import Fade from 'react-reveal/Fade';
+import bell from '../../Assets/Images/noti.png';
 import approved from '../../Assets/Images/check.png';
+
+
+const testimonial = [
+  {
+    company: <p>Rage Room | Springfield MO</p>,
+    review: "We have seen a great improvement in bookings since Markitfly came along! They have great business strategies and really helped us grow.",
+    
+  },
+  {
+    company:  <p>Transformative Lawn and Landscape</p>,
+    review: "Never had a website prior and I can now show my clients my work! Markitfly did a great job showing what my branding is.",
+  },
+  {
+    company: <p>Broadview Seafood | New Orleans</p>,
+    review: "Love my website, people can order quickly and efficiently online. I did not have a website before, so I am glad I can attract customers online.",
+  }
+];
 class Case extends Component {
-    state = {  } 
-    render() { 
+    state = {
+        showReview: false,
+        currentReviewIndex: 0
+      };
+    
+      handleNotificationClick = () => {
+        this.setState(prevState => ({
+          showReview: true,
+          currentReviewIndex: 0
+        }));
+      };
+    
+      handleReviewClick = (event) => {
+        // Check if the clicked element is an <a> tag
+        if (event.target.tagName === 'a') {
+          return;
+        }
+      
+        this.setState(prevState => {
+          const { currentReviewIndex } = prevState;
+          const nextReviewIndex = (currentReviewIndex + 1) % testimonial.length;
+          
+          return {
+            currentReviewIndex: nextReviewIndex
+          };
+        });
+      };
+      
+    
+      render() {
+        const { showReview, currentReviewIndex } = this.state;
+        const currentReview = testimonial[currentReviewIndex];
+    
         return (
             <div id='case-mobile'>
                 <div className='case-container-mobile'>
                     <div className='client-approved' style={{display: "flex", alignItems: "center", marginBottom: "10px"}}>
-                    <Fade up><h2 className='orange-txt'>Client Project Approved!<span><img style={{marginLeft:"10px"}} width="26" src={approved}/></span></h2> </Fade>
+                    <Fade up><h2 className='orange-txt'>Client Approved!<span><img style={{marginLeft:"10px"}} width="26" src={approved}/></span></h2> </Fade>
                     </div>
                     <h1>Our Projects and Case Studies</h1>
                     <div className='case-box'>
@@ -39,8 +88,35 @@ class Case extends Component {
                         heading = "Branding a Business’ online presence, increasing in traction towards their services"
                         icon = {papers}/>
                     </div>
-                    <p>Want to learn more about a case study?</p>
-                    <p><b>Contact <a className='pink-txt' href='mailto:contact@markitfly.com'>contact@markitfly.com</a></b></p>
+                               
+          <div className=''>
+            {!showReview ? (
+              <Fade up delay={400}>
+                <div>
+                  <div className='noti-bubble clickable' onClick={this.handleNotificationClick}>
+                    <img width="50px" src={bell} alt="Notification Bell" />
+                    <div className='msgs'>
+                      <div className='intro'>
+                        <p className='orange-txt'><b><u>Click to Open Reviews</u></b></p>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </Fade>
+            ) : (
+              <div className='review'>
+                    <div className='noti-bubble review' onClick={this.handleReviewClick}>
+                        <img width="50px" src={bell} alt="Notification Bell" />
+                        <div className='company'>{currentReview.company}</div>
+                        <div className='review'>
+                        <p>{currentReview.review}</p>
+                        </div>
+                    </div>
+                </div>
+            )}
+          </div>
+         
                 </div>
                 
             </div>
