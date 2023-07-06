@@ -9,7 +9,7 @@ class Landing extends Component {
         return (
             <div id='fuel'>
                 <div className='landing-container'>
-                        <div className='landing-txt col-lg-6'>
+                        <div className='landing-txt col-lg-5'>
                             <h1 className='purple-txt'>Fuel Your Business Growth with Our Marketing Solutions</h1>
                             <p>We care about our clients and their businesses. Let us build up your business to your needs.</p>
                             
