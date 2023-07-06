@@ -37,7 +37,7 @@ class Services extends Component {
                     <div className='txt col-lg-6'>
                         <h1 className='white-txt txt-shadow'>We have variety of services that fits to your business needs</h1>
                     </div>
-                    <Fade up duration={2000}><div className='img col-lg-4'>
+                    <Fade up delay = {100} duration={2000}><div className='img col-lg-4'>
                         <img src={girl}/>
                     </div></Fade>
                 </div>

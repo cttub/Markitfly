@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './home.css';
-import Fade from 'react-reveal';
+import Fade from 'react-reveal/Fade';
 import piggy from '../../Assets/Images/Piggy.png';
 import {Link} from 'react-router-dom';
 class Landing extends Component {
@@ -22,7 +22,7 @@ class Landing extends Component {
                                         </a>
                             </Link>
                         </div>
-                        <Fade right><div className='piggy-img col-lg-5'>
+                        <Fade right delay = {150}><div className='piggy-img col-lg-5'>
                             <img src = {piggy}/>
                         </div></Fade>
 
