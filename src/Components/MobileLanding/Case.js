@@ -19,12 +19,14 @@ const testimonial = [
     
   },
   {
-    company:  <p>Transformative Lawn and Landscape</p>,
-    review: "Never had a website prior and I can now show my clients my work! Markitfly did a great job showing what my branding is.",
+    company:  <p>Transformative Lawn & Landscape</p>,
+    review: "They are wonderful to work with! They provided us with multiple updates throughout the whole process and options to do different design elements/updates instantly. Would definitely recommend!",
+    link: <a href='https://www.transformlandmo.com/' target='_blank'>Visit Website</a>,
   },
   {
-    company: <p>Broadview Seafood | New Orleans</p>,
-    review: "Love my website, people can order quickly and efficiently online. I did not have a website before, so I am glad I can attract customers online.",
+    company: <p>Broadview Seafood</p>,
+    review: "They are very accommodating to what I wanted with my website. I wanted something very simple and they made changes until I was happy with the final product.",
+    link: <a href='https://www.broadviewseafood.net/' target='_blank'>Visit Website</a>,
   }
 ];
 class Case extends Component {
@@ -109,8 +111,10 @@ class Case extends Component {
                     <div className='noti-bubble review' onClick={this.handleReviewClick}>
                         <img width="50px" src={bell} alt="Notification Bell" />
                         <div className='company'>{currentReview.company}</div>
+                        
                         <div className='review'>
                         <p>{currentReview.review}</p>
+                        <div className='link'>{currentReview.link}</div>
                         </div>
                     </div>
                 </div>

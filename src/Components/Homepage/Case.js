@@ -19,11 +19,11 @@ const testimonial = [
     },
     {
       company:  <p>Transformative Lawn and Landscape <a href='https://www.transformlandmo.com/' target='_blank'>Visit Website</a></p>,
-      review: "Never had a website prior and I can now show my clients my work! Markitfly did a great job showing what my branding is.",
+      review: "They are wonderful to work with! They provided us with multiple updates throughout the whole process and options to do different design elements/updates instantly. Would definitely recommend!",
     },
     {
       company: <p>Broadview Seafood <a href='https://www.broadviewseafood.net/' target='_blank'>Visit Website</a></p>,
-      review: "Love my website, people can order quickly and efficiently online. I did not have a website before, so I am glad I can attract customers online.",
+      review: "They are very accommodating to what I wanted with my website. I wanted something very simple and they made changes until I was happy with the final product.",
     }
   ];
 

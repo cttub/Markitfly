@@ -290,14 +290,25 @@
     float: right;
     font-size: 15px !important; 
 }
+.link{
+    display: flex;
+    justify-content: end;
+}
+.link > a{
+    font-size: 16px !important;
+    color: #FF0E73;
+    text-decoration: underline !important;
 
+}
 .company > p{
+    text-align: left;
     font-size: 16px;
     color: #FF793F;
     font-weight: bold;
     margin-bottom: 0px;
 }
 .review > p{
+    text-align: left;
     display: inline-block;
     font-size: 15px;
     border-top: solid #FF793F 2px;
