@@ -24,9 +24,13 @@ const testimonial = [
     link: <a href='https://www.transformlandmo.com/' target='_blank'>Visit Website</a>,
   },
   {
-    company: <p>Broadview Seafood</p>,
+    company: <p>Broadview Seafood | New Orleans </p>,
     review: "They are very accommodating to what I wanted with my website. I wanted something very simple and they made changes until I was happy with the final product.",
     link: <a href='https://www.broadviewseafood.net/' target='_blank'>Visit Website</a>,
+  },
+  {
+    company: <p>HYZ Inc | Galena Kansas</p>,
+    review: "Markitfly was able to deliver results within the first four weeks of working with us! They were able to increase my revenue by 20% through their online advertisement. Not very tech savy myself, and was skeptical to change, but I am glad I worked with Markitfly to grow my business.",
   }
 ];
 class Case extends Component {
