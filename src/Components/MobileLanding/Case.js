@@ -14,17 +14,12 @@ import approved from '../../Assets/Images/check.png';
 
 const testimonial = [
   {
-    company: <p>Rage Room | Springfield MO</p>,
-    review: "We have seen a great improvement in bookings since Markitfly came along! They have great business strategies and really helped us grow.",
-    
-  },
-  {
     company:  <p>Transformative Lawn & Landscape</p>,
     review: "They are wonderful to work with! They provided us with multiple updates throughout the whole process and options to do different design elements/updates instantly. Would definitely recommend!",
     link: <a href='https://www.transformlandmo.com/' target='_blank'>Visit Website</a>,
   },
   {
-    company: <p>Broadview Seafood | New Orleans </p>,
+    company: <p>Broadview Seafood | New Orleans</p>,
     review: "They are very accommodating to what I wanted with my website. I wanted something very simple and they made changes until I was happy with the final product.",
     link: <a href='https://www.broadviewseafood.net/' target='_blank'>Visit Website</a>,
   },

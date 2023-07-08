@@ -13,11 +13,6 @@ import Fade from 'react-reveal/Fade';
 
 const testimonial = [
     {
-      company: <p>Rage Room | Springfield MO</p>,
-      review: "We have seen a great improvement in bookings since Markitfly came along! They have great business strategies and really helped us grow.",
-      
-    },
-    {
       company:  <p>Transformative Lawn and Landscape <a href='https://www.transformlandmo.com/' target='_blank'>Visit Website</a></p>,
       review: "They are wonderful to work with! They provided us with multiple updates throughout the whole process and options to do different design elements/updates instantly. Would definitely recommend!",
     },

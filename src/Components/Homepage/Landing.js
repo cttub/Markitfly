@@ -22,7 +22,7 @@ class Landing extends Component {
                                         </a>
                             </Link>
                         </div>
-                        <Fade right delay = {150}><div className='piggy-img col-lg-5'>
+                        <Fade right delay = {300}><div className='piggy-img col-lg-5'>
                             <img src = {piggy}/>
                         </div></Fade>
 
